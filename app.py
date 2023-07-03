@@ -79,11 +79,11 @@ def get_verified_users():
     verified_users = {}
     for user in users:
         user_data = {
-            'id': user[0],
-            'name': user[1],
-            'password': user[2],
-            'email': user[4],
-            'role': user[5]
+            'id': user[5],
+            'name': user[0],
+            'password': user[1],
+            'email': user[3],
+            'role': user[4]
         }
         verified_users[user_data['email']] = user_data
     return verified_users
